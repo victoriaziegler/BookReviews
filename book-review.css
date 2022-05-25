@@ -1,75 +1,91 @@
-html{
+html {
     background-color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
+body {
     margin: 0;
 }
 
-header{
-    padding: 12px;
+header {
+    padding: 24px;
+
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    column-gap: 24px;
 }
 
-footer{
+footer {
     background-color: burlywood;
     margin-top: 24px;
     padding: 24px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    align-items: center;
 }
 
-main{
+main {
     max-width: 800px;
     margin: auto;
 }
 
-.main-page-book-review{
+.main-page-book-review {
     background-color: white;
     border: 1px solid lightblue;
     padding: 24px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 
-.book-cover{
+.book-cover {
     width: 200px;
     height: auto;
+
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: span 5;
 }
 
-.book-title{
+.book-title {
     font-weight: bold;
     font-size: 150%;
 }
 
-.book-authors{
+.book-authors {
     color: dimgray;
 }
 
-.book-rating{
+.book-rating {
     font-size: 125%;
 }
 
-.detail-page-book-review{
+.detail-page-book-review {
     background-color: white;
     padding: 24px;
 }
 
-input{
+input {
     border: 1px solid darkgray;
     border-radius: 4px;
     padding: 12px;
 }
 
-textarea{
+textarea {
     border: 1px solid darkgray;
     border-radius: 4px;
     padding: 12px;
     height: 100px;
 }
 
-button{
+button {
     padding: 12px;
     font-size: 110%;
 }
 
-.book-review-form{
+.book-review-form {
     background-color: white;
     padding: 24px;
 }
